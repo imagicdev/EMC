@@ -51,6 +51,7 @@ function options1() {
     }
   }else{options1()}
 }
+function run() {
 alert("Welcome to Encripted Messaging Center");
 if (getCookie("account") = false) {
   alert("Welcome to EMC")
@@ -62,4 +63,5 @@ if (getCookie("account") = false) {
   }
 }else if(getCookie("account") = true){
   options1()
+}
 }
