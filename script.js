@@ -24,7 +24,15 @@ function alert1(text) {
   document.getElementById("alert").style.visibility = "visible"
 }
 function prompt1(with)
-  document.getElementById("
+  document.getElementById("prompttxt").innerHTML = with
+  document.getElementById("prompt").style.visibility = "visible"
+  try {
+    document.getElementById("promptok").addEventListener('click')
+  } catch (Exception) {
+    document.getElementById("prompt").style.visibility = "invisible"'
+    return document.getElementById("txt").value
+  }
+}
 function options2() {
   var options2 = prompt("what would you like to do, email, copy to clipboard", qr code)
   if (options2.toLowerCase() = "email") {
