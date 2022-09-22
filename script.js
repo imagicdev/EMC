@@ -22,6 +22,11 @@ function getCookie(cname) {
 function alert1(text) {
   document.getElementById("alerttxt").innerHTML = text
   document.getElementById("alert").style.visibility = "visible"
+  try {
+    document.getElementById("alertok").addEventListener('click')
+  } catch (Exception) {
+    document.getElementById("alert").style.visibility = "invisible"
+  }
 }
 function prompt1(with)
   document.getElementById("prompttxt").innerHTML = with
@@ -30,7 +35,7 @@ function prompt1(with)
     document.getElementById("promptok").addEventListener('click')
   } catch (Exception) {
     document.getElementById("prompt").style.visibility = "invisible"'
-    return document.getElementById("txt").value
+    return document.getElementById("txt").value;
   }
 }
 function options2() {
