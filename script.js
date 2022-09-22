@@ -45,8 +45,8 @@ function options2() {
   }else if(options2.toLowerCase() = ("copy" || "copy to clipboard")) {
     navigator.clipboard.write(EmcMessage);
   }else if(options2.toLowerCase() = "qr code") {
-    var qrc = new QRCode(document.getElementById("qr"), EmcMessage) 
-    document.getElementById("qr").style.visibility = "visible";
+    var qrc = new QRCode(document.getElementById("alert"), EmcMessage) 
+    document.getElementById("alert").style.visibility = "visible";
   }else{options2()}
 }
 function options1() {
