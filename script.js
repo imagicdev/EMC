@@ -20,7 +20,11 @@ function getCookie(cname) {
   return "";
 }
 function alert1(text) {
-  document.getElementById("alertmethod").style.visibility = "visible"
+  document.getElementById("alerttxt").innerHTML = text
+  document.getElementById("alert").style.visibility = "visible"
+}
+function prompt1(with)
+  document.getElementById("
 function options2() {
   var options2 = prompt("what would you like to do, email, copy to clipboard", qr code)
   if (options2.toLowerCase() = "email") {
