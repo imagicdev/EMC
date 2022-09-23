@@ -8,18 +8,19 @@
   </head>
   <body>
     <script src="script.js"></script>
-    <div class="alertbox" id="alertbox">
-      <div class="alert" id="alert">
-        <h3 id="alerttxt" class="alerttxt"></h3>
-        <button type="button" id="alertok"></button>
-      </div>
-      <div class="prompt" id="prompt">
-        <h3 id="prompttxt" class="prompttxt">
-        <input type="text" class="txt" id="txt">
-        <button type="button" id="promptok">
-      </div>
-    </div>
+    <!-- copyright 2022 IMagic Dev Group (ps this is open source DONOT REDISTRIBUTE CODE) -->
     <h1>Encripted messaging center</h1>
     <button class="run" id="run" onclick="run()">Run EMC</button>
+    <div class="alertbox" id="alertbox">
+      <div class="alert" id="alert" style="visibility:invisible;">
+        <h3 id="alerttxt" class="alerttxt"></h3>
+        <button type="button" id="alertok">OK</button>
+      </div>
+      <div class="prompt" id="prompt" style="visibility:invisible">
+        <h3 id="prompttxt" class="prompttxt">
+        <input type="text" class="txt" id="txt">
+        <button type="button" id="promptok">DONE</button>
+      </div>
+    </div>
   </body>
 </html>
