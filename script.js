@@ -39,9 +39,9 @@ function prompt1(with)
   }
 }
 function options2() {
-  var options2 = prompt("what would you like to do, email, copy to clipboard", qr code)
+  var options2 = prompt1("what would you like to do, email, copy to clipboard", qr code)
   if (options2.toLowerCase() = "email") {
-    document.open("mailto:" + prompt("email of target") + "?subject=Encripted Message&body=" + EmcMessage)
+    document.open("mailto:" + prompt1("email of target") + "?subject=Encripted Message&body=" + EmcMessage)
   }else if(options2.toLowerCase() = ("copy" || "copy to clipboard")) {
     navigator.clipboard.write(EmcMessage);
   }else if(options2.toLowerCase() = "qr code") {
@@ -50,10 +50,10 @@ function options2() {
   }else{options2()}
 }
 function options1() {
-  var options = prompt("what would you like to do, Encode, Decode, Change UID and PWD")
+  var options = prompt1("what would you like to do, Encode, Decode, Change UID and PWD")
   if (options.toLowerCase() = encode){
-    var target = prompt("Target uid of user")
-    var message = prompt("what is the message")
+    var target = prompt1("Target uid of user")
+    var message = prompt1("what is the message")
     const a = [target, message];
     var EmcMessage = encodeURIComponet(bota(encodeURIComponent(a.join("|"))))
     options2()
@@ -61,9 +61,9 @@ function options1() {
     var message = prompt("what is the encoded message?")
     var decMessage = decodeURIComponent(atob(decodeURIComponent(message)))
     const split = split(decMessage, "|")
-    if (split[1] = UID) {alert("your friends message is" + split[2])}else{alert("you don’t have access to this message")}
+    if (split[1] = UID) {alert1("your friends message is" + split[2])}else{alert1("you don’t have access to this message")}
   }else if(options.toLowerCase() = ("change" || "change uid and pwd"){
-    var UID = prompt("Create a user id use 10 numbers _you can use your phone number_");
+    var UID = prompt1("Create a user id use 10 numbers _you can use your phone number_");
     if (UID < 999999999 && UID > 10000000000) {
       setCookie("uid", UID, 1000000000000000000);
       setCookie("pwd", prompt("Create a password. _something you can remember_"), 100000000000000000000);
@@ -72,9 +72,9 @@ function options1() {
   }else{options1()}
 }
 function run() {
-alert("Welcome to Encripted Messaging Center");
+alert1("Welcome to Encripted Messaging Center");
 if (getCookie("account") = false) {
-  alert("Welcome to EMC")
+  alert1("Welcome to EMC")
   var UID = prompt("Create a user id use 10 numbers _you can use your phone number_");
   if (UID < 999999999 && UID > 10000000000) {
     setCookie("uid", UID, 1000000000000000000);
